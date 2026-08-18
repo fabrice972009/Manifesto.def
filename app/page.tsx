@@ -183,6 +183,40 @@ export default function Home() {
       )}
 
       
+      {/* ── TRACKLIST ── */}
+      {isFree && (
+        <div className="max-w-lg mx-auto px-4 pb-6">
+          <p className="font-mono text-[rgba(212,180,131,0.4)] text-[10px] uppercase tracking-widest text-center mb-4">Lis Chante</p>
+          {MANIFESTO_TRACKS.map((t,i) => (
+            <button key={i} onClick={() => loadAndPlay(i)}
+              className={`w-full flex items-center gap-4 px-4 py-3.5 rounded-sm transition-all text-left group
+                ${i===idx && started ? "bg-[rgba(107,15,18,0.35)] border border-[rgba(184,67,14,0.4)]" : "hover:bg-[rgba(212,180,131,0.05)] border border-transparent"}`}>
+              <div className="w-8 flex-shrink-0 text-center">
+                {i===idx && started && playing
+                  ? <span className="text-[#B8430E] text-sm">▶</span>
+                  : <span className={`font-mono text-xs ${i===idx && started ? "text-[#B8430E]" : "text-[rgba(212,180,131,0.35)] group-hover:text-[rgba(212,180,131,0.6)]"}`}>{String(i+1).padStart(2,"0")}</span>
+                }
+              </div>
+              <span className={`flex-1 text-sm ${i===idx && started ? "text-[#E8DFC8] font-display" : "text-[rgba(232,223,200,0.65)] group-hover:text-[#E8DFC8]"}`}>
+                {t.title}
+              </span>
+              {i===idx && started && (
+                <span className="font-mono text-[10px] text-[rgba(212,180,131,0.35)]">{fmt(elapsed)}</span>
+              )}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {!isFree && (
+        <div className="max-w-sm mx-auto px-6 text-center py-8">
+          <p className="text-[rgba(232,223,200,0.5)] text-sm leading-relaxed">
+            Fenèt koute gratis la fèmen. Achte album lan pou jwenn aksè pèmanan.
+          </p>
+        </div>
+      )}
+
+      
       <section className="px-6 py-10 border-t border-[rgba(212,180,131,0.1)]">
         <div className="max-w-sm mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6">
