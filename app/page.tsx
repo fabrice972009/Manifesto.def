@@ -182,7 +182,51 @@ export default function Home() {
         </div>
       )}
 
-      <footer className="px-6 py-10 text-center border-t border-[rgba(212,180,131,0.1)] mt-4">
+      
+      <section className="px-6 py-10 border-t border-[rgba(212,180,131,0.1)]">
+        <div className="max-w-sm mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"/>
+            <span className="font-mono text-[#B8430E] text-[10px] uppercase tracking-widest">Evènman Prive</span>
+          </div>
+          <h2 className="font-display text-[#E8DFC8] text-2xl text-center mb-1">Ant Mwen ak Ou</h2>
+          <p className="font-display text-[#D4B483] text-[10px] tracking-[0.2em] text-center mb-6">DEF FONDAMANTAL · Live Prive</p>
+          <div className="bg-[#1C1410] border border-[rgba(212,180,131,0.15)] rounded-sm p-5 mb-6">
+            <div className="space-y-3">
+              {[["💬","Kesyon/repons ak atis la an direk"],["🎧","Diskisyon sou chak moso album lan"],["🎶","Vèsyon inedite / akoustik"],["👀","Kontni ki poko janm pibliye"],["📹","Koulise kreyasyon album lan"],["❤️","Moman pèsonèl ak moun ki sipote"],["🎁","Sipriz eksklizif nan fen an"]].map(([icon, text], i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <span className="text-base flex-shrink-0">{icon}</span>
+                  <span className="text-[rgba(232,223,200,0.7)] text-sm">{text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col gap-3">
+            <a href="/live" className="flex items-center justify-between bg-[#1C1410] border border-[rgba(212,180,131,0.25)] hover:border-[#B8430E] px-5 py-3.5 rounded-sm transition-colors">
+              <div className="text-left">
+                <p className="font-display text-[#D4B483] text-sm">Te achte koleksyon $50</p>
+                <p className="font-mono text-[10px] text-[rgba(212,180,131,0.45)]">Aksè gratis — klike pou antre</p>
+              </div>
+              <span className="text-[#D4B483] text-lg">→</span>
+            </a>
+            <a href="https://buy.stripe.com/fZu00i0IT39P92T5Xjbwk0h" target="_blank" rel="noreferrer" className="flex items-center justify-between bg-[rgba(107,15,18,0.2)] border border-[#6B0F12] hover:bg-[rgba(107,15,18,0.35)] px-5 py-3.5 rounded-sm transition-colors">
+              <div className="text-left">
+                <p className="font-display text-[#E8DFC8] text-sm">Te achte Manifesto $20</p>
+                <p className="font-mono text-[10px] text-[rgba(232,223,200,0.45)]">Ajoute aksè nan live la</p>
+              </div>
+              <span className="font-display text-[#D4B483] text-sm">+$20</span>
+            </a>
+            <a href="https://buy.stripe.com/fZu00i0IT39P92T5Xjbwk0h" target="_blank" rel="noreferrer" className="flex items-center justify-between bg-[#6B0F12] hover:bg-[#B8430E] px-5 py-3.5 rounded-sm transition-colors">
+              <div className="text-left">
+                <p className="font-display text-[#E8DFC8] text-sm">Poko peye — jwenn aksè</p>
+                <p className="font-mono text-[10px] text-[rgba(232,223,200,0.55)]">Peye pou gade live prive a</p>
+              </div>
+              <span className="font-display text-[#D4B483] text-sm">$20</span>
+            </a>
+          </div>
+        </div>
+      </section>
+<footer className="px-6 py-10 text-center border-t border-[rgba(212,180,131,0.1)] mt-4">
         <p className="text-[rgba(232,223,200,0.2)] text-xs">© Def Fondamantal — Tout dwa rezève</p>
       </footer>
 
