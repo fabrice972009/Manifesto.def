@@ -1,7 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-
-// $50 buyers — Manifesto + Diskografi (34 imel)
 const COLLECTION_BUYERS = new Set([
+  "juniorzacharybitton48@gmail.com",
+  "layelmister@gmail.com",
+  "clarensjeanjacques0@gmail.com",
+  "jeffalcime.pro@gmail.com",
+  "avatarinvestisment2025@gmail.com",
+  "herlotjoseph@yahoo.com",
+  "ledatushilaire.75@gmail.com",
   "alyngilet@gmail.com",
   "jeanandersen498@gmail.com",
   "skesnove@gmail.com",
@@ -36,9 +41,24 @@ const COLLECTION_BUYERS = new Set([
   "sauveurjosephisaie@gmail.com",
   "jozamasimeonjoseph@gmail.com",
   "tarzantaxi12@gmail.com",
-  "manifesto.vip50@gmail.com", // ← dummy $50
+  "ansyrichecarde2@icloud.com",
+  "davidanalce@icloud.com",
+  "belange201088@gmail.com",
+  "thotho4778@gmail.com",
+  "jeanmarymarly@gmail.com",
+  "stevensonb945@gmail.com",
+  "jeankenleyy@gmail.com",
+  "pauldavid907@gmail.com",
+  "maphneyfils35@gmail.com",
+  "willsvalendy@gmail.com",
+  "pybarosy@gmail.com",
+  "katoutou3@gmail.com",
+  "abygalremy1@gmail.com",
+  "leslysidort@gmail.com",
+  "sebienestor@icloud.com",
+  "etienneroodjerry960@gmail.com",
+  "manifesto.vip50@gmail.com",
 ]);
-
 export async function POST(req: NextRequest) {
   const { email } = await req.json();
   if (!email || typeof email !== "string") return NextResponse.json({ valid: false });

@@ -1,7 +1,50 @@
 import { NextRequest, NextResponse } from "next/server";
-
-// $20 buyers — Manifesto sèlman (34 imel)
 const MANIFESTO_BUYERS = new Set([
+  "adnergustin01@gmail.com",
+  "edmorinbernado252@gmail.com",
+  "edmorinbernado252@icloud.com",
+  "frankou91@gmail.com",
+  "wesleyalzime6@gmail.com",
+  "rubenmairicet04@icloud.com",
+  "biennescarjean@gmail.com",
+  "simonisguibens4@gmail.com",
+  "miliceclivenson@gmail.com",
+  "jeankelly98@icloud.com",
+  "dumornejerry06@gmail.com",
+  "diksonj19@gmail.com",
+  "noradinrotmicetejunior@gmail.com",
+  "wisbentzpoteau59@gmail.com",
+  "sacky103paulnais103@icloud.com",
+  "leslysidort@gmail.com",
+  "derwensg@gmail.com",
+  "josephjeanstevie97@icloud.com",
+  "jerryaygusmat22@gmail.com",
+  "duhamelmitchelsonp@gmail.com",
+  "eudenedorcelus97@gmail.com",
+  "hyppolitekamy@gmail.com",
+  "gjgerald31@gmail.com",
+  "lochardmike06@gmail.com",
+  "djoubenss@gmail.com",
+  "luciusnelson1@gmail.com",
+  "richardcharlotin9@gmail.com",
+  "jd1348888@gmail.com",
+  "sekhelbarak@gmail.com",
+  "jojoclermont90@gmail.com",
+  "jeanzephyr199@gmail.com",
+  "muradsonfilsaime@gmail.com",
+  "fredmagne53@gmail.com",
+  "djemsoninterne2021@gmail.com",
+  "myckcharles@gmail.com",
+  "adnerflores302@gmail.com",
+  "getropierre43@gmail.com",
+  "fosla73@gmail.com",
+  "pd0875644@gmail.com",
+  "chatelainbusiness@gmail.com",
+  "rabenscius419@gmail.com",
+  "philogenecarloo@gmail.com",
+  "saeldokeffmy.joseph@uniq.edu",
+  "dericelukenson6@gmail.com",
+  "jbdorce40@gmail.com",
   "shadlynejoseph6@gmail.com",
   "samstanleypaul26@gmail.com",
   "breensvilce@myyahoo.com",
@@ -36,9 +79,8 @@ const MANIFESTO_BUYERS = new Set([
   "andieloanevil1995@gmail.com",
   "davyray94@gmail.com",
   "wensleypierre419@gamil.com",
-  "manifesto.vip20@gmail.com", // ← dummy $20
+  "manifesto.vip20@gmail.com",
 ]);
-
 export async function POST(req: NextRequest) {
   const { email } = await req.json();
   if (!email || typeof email !== "string") return NextResponse.json({ valid: false });
