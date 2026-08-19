@@ -58,7 +58,7 @@ function Gate({ onResult }: { onResult: (stage: Stage) => void }) {
       </div>
 
       <div className="relative w-44 aspect-square mb-6 rounded-sm overflow-hidden border border-[rgba(212,180,131,0.2)] shadow-[0_0_80px_rgba(107,15,18,0.6)]">
-        <Image src="/cover.png" alt="Manifesto" fill className="object-cover"/>
+        <Image src="/ant-mwen-ak-ou.jpg" alt="Ant Mwen ak Ou" fill className="object-cover"/>
       </div>
 
       <h1 className="font-display text-[#E8DFC8] text-3xl md:text-4xl mb-2">Ant Mwen ak Ou</h1>
@@ -95,7 +95,7 @@ function UpgradePrompt() {
       </div>
 
       <div className="relative w-44 aspect-square mb-6 rounded-sm overflow-hidden border border-[rgba(212,180,131,0.2)] shadow-[0_0_60px_rgba(107,15,18,0.5)]">
-        <Image src="/cover.png" alt="Manifesto" fill className="object-cover"/>
+        <Image src="/ant-mwen-ak-ou.jpg" alt="Ant Mwen ak Ou" fill className="object-cover"/>
       </div>
 
       <h1 className="font-display text-[#E8DFC8] text-2xl md:text-3xl mb-3">Ant Mwen ak Ou</h1>
@@ -144,7 +144,7 @@ function LiveAccess() {
       </div>
 
       <div className="relative w-44 aspect-square mb-6 rounded-sm overflow-hidden border border-[rgba(212,180,131,0.2)] shadow-[0_0_80px_rgba(107,15,18,0.6)]">
-        <Image src="/cover.png" alt="Manifesto" fill className="object-cover"/>
+        <Image src="/ant-mwen-ak-ou.jpg" alt="Ant Mwen ak Ou" fill className="object-cover"/>
       </div>
 
       <h1 className="font-display text-[#E8DFC8] text-3xl md:text-4xl mb-2">Ant Mwen ak Ou</h1>

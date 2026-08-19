@@ -26,7 +26,7 @@ export default function AntMwenAkOuPage() {
         </div>
 
         <div className="relative w-44 aspect-square mx-auto mb-6 rounded-sm overflow-hidden border border-[rgba(212,180,131,0.2)] shadow-[0_0_60px_rgba(107,15,18,0.5)]">
-          <Image src="/cover.png" alt="Manifesto" fill className="object-cover"/>
+          <Image src="/ant-mwen-ak-ou.jpg" alt="Ant Mwen ak Ou" fill className="object-cover"/>
         </div>
 
         <h1 className="font-display text-[#E8DFC8] text-3xl text-center mb-1">Ant Mwen ak Ou</h1>
