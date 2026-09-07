@@ -23,9 +23,6 @@ export default function AntMwenAkOuPage() {
         {/* CONTENT */}
         <div style={{padding:"0 24px 60px", marginTop:"-8px"}}>
 
-          {/* Date */}
-          <p style={{fontFamily:"'Courier New', monospace", fontSize:"11px", letterSpacing:"0.3em",
-            textTransform:"uppercase", color:"#C9A84C", textAlign:"center", marginBottom:"24px"}}>
           {/* Message */}
           <div style={{marginBottom:"28px", textAlign:"center"}}>
             <p style={{color:"rgba(255,255,255,0.65)", fontSize:"14px", lineHeight:"1.9",
@@ -67,7 +64,6 @@ export default function AntMwenAkOuPage() {
             <span style={{color:"#000", fontSize:"18px", fontWeight:"bold"}}>$10 →</span>
           </a>
 
-          {/* Footer */}
           <p style={{textAlign:"center", fontFamily:"monospace", fontSize:"10px",
             letterSpacing:"0.2em", textTransform:"uppercase", color:"rgba(255,255,255,0.12)",
             marginTop:"36px", marginBottom:"12px"}}>
