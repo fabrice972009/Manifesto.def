@@ -26,12 +26,8 @@ export default function AntMwenAkOuPage() {
           {/* Date */}
           <p style={{fontFamily:"'Courier New', monospace", fontSize:"11px", letterSpacing:"0.3em",
             textTransform:"uppercase", color:"#C9A84C", textAlign:"center", marginBottom:"24px"}}>
-            13 Septanm 2026 · 10PM
-          </p>
-
           {/* Message */}
-          <div style={{marginBottom:"28px", borderLeft:"2px solid rgba(201,168,76,0.4)",
-            paddingLeft:"16px"}}>
+          <div style={{marginBottom:"28px", textAlign:"center"}}>
             <p style={{color:"rgba(255,255,255,0.65)", fontSize:"14px", lineHeight:"1.9",
               marginBottom:"14px"}}>
               Istwa a te kòmanse 14 Septanm 1991. 35 ane apre, ann selebre lavi, mizik ak tout bèl souvni yo ansanm.
